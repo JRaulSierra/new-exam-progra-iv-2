@@ -1,0 +1,6 @@
+<h1>Valor a cumulador</h1>
+<br/>
+<input type="number" [(ngModel)]="acumulado">
+<h3 *ngIf="acumulado === 0">No se ha acumulado ningún valor</h3>
+<br/>
+<app-formulario (valorResetado)="addToAcumulado($event)"></app-formulario>
